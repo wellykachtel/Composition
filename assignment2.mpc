@@ -1,0 +1,33 @@
+// $Id: assignment2.mpc 378 2010-02-07 22:09:38Z hillj $
+
+project (assignment2) {
+  exename = assignment2
+  install = .
+ 
+  Source_Files {
+    driver.cpp
+  }
+  
+  Header_Files {
+    Fixed_Array.h
+    Stack.h
+    Array.h
+    Queue.h
+    Array_Base.h
+  }
+
+  Inline_Files {
+   Stack.inl
+   Array.inl
+   Queue.inl 
+   Array_Base.inl
+  }
+
+  Template_Files {
+    Array_Base.cpp
+    Fixed_Array.cpp
+    Stack.cpp
+    Array.cpp
+    Queue.cpp
+  }
+}
